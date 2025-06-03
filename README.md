@@ -80,10 +80,8 @@ Atualmente, estamos buscando [parceiros, investidores, desenvolvedores - especif
 
 ## 📞 Contato
 
-* **Website:** [Link para o seu website, se houver]
-* **Email:** [Seu endereço de email para contato]
-* **LinkedIn:** [Link para a página do projeto no LinkedIn, se houver]
+* **Website:** https://conecta-hub.com
+* **Email:** contato@conecta-hub.com
+* **LinkedIn:** https://linkedin.com/in/conecta-hub
 
 ---
-
-Este README é um ponto de partida. Sinta-se à vontade para adaptá-lo, adicionar seções (como "Instalação", "Licença", etc.) e personalizá-lo conforme a identidade visual e as especificidades do seu aplicativo. Lembre-se de substituir os placeholders como `[link_para_seu_banner_opcional.png]` e informações de contato.
