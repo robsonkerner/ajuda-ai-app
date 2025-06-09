@@ -1,10 +1,10 @@
-# Conecta Hub
+# Ajuda Ai - App
 
 ## Plataforma de Inovação e Oportunidades Universidade-Empresa
 
 ## 🚀 Sobre o Projeto
 
-**Conecta Hub** é uma plataforma inovadora projetada para aproximar o mundo acadêmico do setor empresarial, fomentando a colaboração, a inovação e o desenvolvimento mútuo. Acreditamos que a sinergia entre universidades e empresas é crucial para o avanço tecnológico, a resolução de desafios complexos e a criação de novas oportunidades de mercado e carreira.
+**Ajuda Ai** é uma plataforma inovadora projetada para aproximar o mundo acadêmico do setor empresarial, fomentando a colaboração, a inovação e o desenvolvimento mútuo. Acreditamos que a sinergia entre universidades e empresas é crucial para o avanço tecnológico, a resolução de desafios complexos e a criação de novas oportunidades de mercado e carreira.
 
 Nossa plataforma permite que empresas identifiquem suas necessidades e potenciais através de diagnósticos especializados, e que universidades apresentem suas competências e serviços de Pesquisa & Desenvolvimento (P&D). Além disso, facilitamos rodadas de negócios, a divulgação de vagas, consultorias e cursos, criando um ecossistema completo para a inovação.
 
@@ -59,7 +59,7 @@ A plataforma oferece um conjunto robusto de funcionalidades para diferentes perf
 ### Estrutura Sugerida:
 
 ```bash
-conecta-hub/
+ajuda-ai/
 │
 ├── app/                      # Código-fonte do app
 │   ├── static/               # Arquivos estáticos
@@ -121,15 +121,15 @@ _(Esta seção pode ser mais detalhada conforme o desenvolvimento do projeto)_
 
 ## 🤝 Como Contribuir
 
-Atualmente, estamos buscando [parceiros, investidores, desenvolvedores - especifique se aplicável]. Se você tem interesse em colaborar com o **Conecta Hub**, entre em contato conosco!
+Atualmente, estamos buscando [parceiros, investidores, desenvolvedores - especifique se aplicável]. Se você tem interesse em colaborar com o **Ajuda Ai**, entre em contato conosco!
 
 - Abra uma `Issue` para reportar bugs ou sugerir novas funcionalidades.
 - Faça um `Fork` do projeto, crie sua `Branch` e envie um `Pull Request`.
 
 ## 📞 Contato
 
-- **Website:** https://conecta-hub.com
-- **Email:** contato@conecta-hub.com
-- **LinkedIn:** https://linkedin.com/in/conecta-hub
+- **Website:** https://ajuda-ai.com
+- **Email:** contato@ajuda-ai.com
+- **LinkedIn:** https://linkedin.com/in/ajuda-ai
 
 ---
