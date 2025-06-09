@@ -71,25 +71,24 @@ ajuda-ai/
 │   │       └── logo.png
 │   │
 │   ├── templates/            # Templates HTML (Jinja2)
-│   │   ├── base.html         # Template base com {% block %}s
-│   │   ├── index.html        # Página inicial
-│   │   ├── login.html
-│   │   ├── cadastro.html
-│   │   ├── painel_empresa.html
-│   │   ├── painel_faculdade.html
-│   │   ├── painel_aluno.html
-│   │   ├── painel_publico.html
-│   │   ├── diagnostico.html
-│   │   ├── vagas.html
-│   │   ├── projetos.html
-│   │   ├── pesquisas.html
-│   │   ├── curriculo.html
-│   │   ├── notificacoes.html
-│   │   ├── mensagens.html
-│   │   ├── dashboard.html
-│   │   ├── relatorios.html
-│   │   ├── ajuda.html
-│   │   └── sobre.html
+│   │   ├── base.html         # Template base com {% block %}s   Aline
+│   │   ├── index.html        # Página inicial  //               Brisa
+│   │   ├── login.html                                           Bryan
+│   │   ├── cadastro.html                                        Davi
+│   │   ├── painel_empresa.html                                  Giovanni
+│   │   ├── painel_faculdade.html                                Guilherme
+│   │   ├── painel_publico.html                                  Gustavo
+│   │   ├── diagnostico.html                                     Jade
+│   │   ├── vagas.html                                           Lucas
+│   │   ├── projetos.html                                        Luis H.
+│   │   ├── pesquisas.html                                       Luiz F.
+│   │   ├── curriculo.html                                       Mariana
+│   │   ├── notificacoes.html                                    Rafaela R.
+│   │   ├── mensagens.html                                       Raffaela L.
+│   │   ├── dashboard.html                                       Rodrigo
+│   │   ├── relatorios.html                                      Samuel
+│   │   ├── ajuda.html                                           Samyr
+│   │   └── sobre.html                                           Vinicius
 │   │
 │   ├── __init__.py           # Inicialização do app Flask
 │   └── routes.py             # Rotas do Flask
