@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.index') }}">Início</a></li>
+                <li><a href="{{ url_for('main.login') }}">Login</a></li>
+                <li><a href="{{ url_for('main.cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('main.painel_empresa') }}">Painel Empresa</a></li>
+                <li><a href="{{ url_for('main.painel_faculdade') }}">Painel Faculdade</a></li>
+                <li><a href="{{ url_for('main.painel_publico') }}">Painel Público</a></li>
+                <li><a href="{{ url_for('main.diagnostico') }}">Diagnóstico</a></li>
+                <li><a href="{{ url_for('main.vagas') }}">Vagas</a></li>
+                <li><a href="{{ url_for('main.projetos') }}">Projetos</a></li>
+                <li><a href="{{ url_for('main.pesquisas') }}">Pesquisas</a></li>
+                <li><a href="{{ url_for('main.curriculo') }}">Currículo</a></li>
+                <li><a href="{{ url_for('main.notificacoes') }}">Notificações</a></li>
+                <li><a href="{{ url_for('main.mensagens') }}">Mensagens</a></li>
+                <li><a href="{{ url_for('main.dashboard') }}">Dashboard</a></li>
+                <li><a href="{{ url_for('main.relatorios') }}">Relatórios</a></li>
+                <li><a href="{{ url_for('main.ajuda') }}">Ajuda</a></li>
+                <li><a href="{{ url_for('main.sobre') }}">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Conecta-Hub</p>
+    </footer>
+  </body>
+</html>
