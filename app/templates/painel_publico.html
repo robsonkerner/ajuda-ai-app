@@ -4,15 +4,170 @@
 
 {% block content %}
 <style>
-  
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .btn {
+        text-decoration: none;
+        background-color: #007BFF;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card h2 {
+        margin-bottom: 10px;
+        color: #007BFF;
+    }
+    .card p {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+
+    .card-destaque {
+        background: #fff;
+        border-left: 5px solid #007BFF;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    .card-destaque:hover {
+        transform: scale(1.02);
+    }
+
+    .oportunidades-destaque {
+        padding: 40px 20px;
+        background: #f9f9f9;
+        text-align: center;
+    }
+
+    .oportunidades-destaque h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .grid-destaques {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card-destaque {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    .card-destaque:hover {
+        transform: scale(1.02);
+    }
+
+    .card-destaque h3 {
+        color: #007BFF;
+        margin-bottom: 10px;
+    }
+
+    .card-destaque p {
+        color: #444;
+        margin-bottom: 15px;
+    }
+
+    .badge-novo {
+        background-color: #e63946;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
 </style>
 
-<h1>Painel Público</h1>
+<div class="banner">
+  <h1>Bem-vindo ao Ajuda Ai</h1>
+  <p>Plataforma de Inovação e Oportunidades Universidade-Empresa</p>
+  <a href="/cadastro" class="btn">Cadastre-se Agora</a>
+</div>
 
-<h2>Contato:</h2>
-<ul>
-  <li><Strong>Endereço: </Strong>Alameda Vereador Darci Aparecido da Silva 245, Lagoa Seca</li>
-  <li><strong>Email: </strong></li>
-</ul>
 
+<div class="card-grid">
+  <div class="card">
+    <h2>Diagnóstico de Inovação</h2>
+    <p>Avalie o potencial inovador da sua empresa com ferramentas especializadas.</p>
+    <a href="/diagnostico" class="btn">Ver mais</a>
+  </div>
+
+  <div class="card">
+    <h2>Cursos e Capacitações</h2>
+    <p>Confira os cursos oferecidos pelas universidades para empresas e profissionais.</p>
+    <a href="/painel_faculdade" class="btn">Ver cursos</a>
+  </div>
+
+  <div class="card">
+    <h2>Consultorias Acadêmicas</h2>
+    <p>Encontre especialistas para resolver desafios reais da sua empresa.</p>
+    <a href="mensagens" class="btn">Explorar</a>
+  </div>
+</div>
+
+
+<section class="oportunidades-destaque">
+  <h2>Oportunidades em Destaque</h2>
+  <div class="grid-destaques">
+    
+    <div class="card-destaque">
+      <span class="badge-novo">Novo</span>
+      <h3>Estágio em Análise de Dados</h3>
+      <p>Empresa TechX procura estudantes para atuar com análise de dados.</p>
+      <a href="/vagas" class="btn">Ver Detalhes</a>
+    </div>
+
+    <div class="card-destaque">
+      <h3>Curso: Inovação em Pequenas Empresas</h3>
+      <p>Capacitação online oferecida pela Universidade Federal para gestores de negócios locais.</p>
+      <a href="/painel_faculdade" class="btn">Inscreva-se</a>
+    </div>
+
+    <div class="card-destaque">
+      <h3>Projeto de P&D em Biotecnologia</h3>
+      <p>Parceria aberta com universidades para desenvolvimento de biofertilizantes sustentáveis.</p>
+      <a href="/projetos" class="btn">Explorar</a>
+    </div>
+
+  </div>
+</section>
 {% endblock %}
