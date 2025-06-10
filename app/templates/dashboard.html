@@ -3,6 +3,100 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Instituições de Ajude Ai </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #d8ebfa;
+        }
+        h1 {
+            text-align: center;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: rgb(124, 193, 224);
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 500px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #000000;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Dashboard de Instituições de Ajude Ai</h1>
+    <div class="dashboard">
+        <div class="card">
+            <h2>Empresas Públicas</h2>
+            <ul>
+                <li>Correios</li>
+                <li>Petrobras</li>
+                <li>Caixa Econômica Federal</li>
+                <li>Banco do Brasil</li>
+                 
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Empresas Privadas</h2>
+            <ul>
+                <li>Magazine Luiza</li>
+                <li>Nubank</li>
+                <li>Ambev</li>
+                <li>XP Investimentos</li>
+
+ <canvas id="myChart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+      const data = {
+          labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+          datasets: [{
+              label: 'Vendas',
+              data: [12, 112, 1130, 785, 594]
+          }]
+      };
+      const config = {
+          type: 'line',
+          data: data
+      };
+      const myChart = new Chart(document.getElementById('myChart'), config);
+  </script>
+
+                    
+                </script>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Faculdades</h2>
+            <ul>
+                <li>USP</li>
+                <li>PUC</li>
+                <li>FGV</li>
+                <li>UNIS</li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
 {% endblock %}
