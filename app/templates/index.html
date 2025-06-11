@@ -3,80 +3,158 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-
 <!DOCTYPE html>
-<html lang="pt-br">
-  <body>
+<HTml LANG="pt-br">
+
+<head>
+  <title>Ajuda.ai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #d3ad7f;
+      --black: #13131a;
+      --bg: #83767c;
+      --border: 01rem solid rgba(3, 1, 1, 0.3);
+      font-size: 10px;
+    }
+
+    /* Estilos para o cabeçalho */
+    * {
+      margin: 2rem;
+      padding: 2rem;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: 0, 2 linear;
+      font-family: "Roboto", sans-serif;
+
+    }
+
+    body {
+      background-color: var(--bg);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      border-bottom: var(--border);
+    }
+
+    .header section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .navmenu a {
+      gap: 2rem;
+      margin: 0.8 1rem;
+      font-size: 1.8rem;
+      color: #fff
+    }
+
+    .navmenu a:hover {
+      color: var(--main-color);
+      border-bottom: var(--main-color);
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .icons {
+      margin: 1rem;
+      cursor: pointer;
+    }
+
+    .incos img:hover {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
     <!-- Esse é o cabeçalho (header) principal que vai ser usado em todas as páginas do nosso website -->
+    <section>
+      <a href="#" class="logo">
+        <!-- O elemento <a> é usado para criar links. A classe "logo" pode ser usada para estilizar o logotipo -->
+        <img src="https://via.placeholder.com/150" alt="Logo Ajuda.ai" class="logo-img">
+      </a>
+      <nav class="navmenu">
+        <!-- Um menu de navegação é uma maneira comum de navegar por um site. -->
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#instiruições">Intituicões</a>
+        <a href="#suporte">Suporte</a></a>
 
-    <header>
-      <h1>Ajuda.ai</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#"></a>Empresas</li>
-        <li><a href="#"></a>Alunos</li>
-        <li><a href="#"></a>Mais</li>
-      </ul>
+      </nav>
+      <div class="icons">
+        <!-- Ícones de redes sociais ou outras funcionalidades -->
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/search--v1.png" alt="search--v1"
+          alt="Ícone de pesquisa" class="icon">
+      </div>
+    </section>
+  </header>
+  </div>
+  <main>
+    <article>
+      <div class="home">
+        <!-- Essa é a seção principal do site, onde o conteúdo principal será exibido -->
+        <section id:="#home">
+          <!-- O ID "home" pode ser usado para vincular diretamente a esta seção -->
+          <div class:="conteudo">
+            <h1>Bem-vindo ao Ajuda.ai</h1>
+            <p>Seu portal de ajuda e informaçõ</p>
+            <P>Descubra como podemos ajudar você a encontrar as respostas que procura.</P>
+            <h2>O que oferecemos</h2>
+            <p>Conteúdo sobre o que oferecemos.</p>
 
-      <!-- Um formulário de pesquisa é uma outra maneira não linear comum de navegar por um site. -->
+            <h3>Saiba mais a nossa história</h3>
+            <p>Detalhes sobre nossa história.</p>
 
-    </nav>
+            <p>Mais informações sobre nossos serviços.</p>
 
-    <!-- Esse é o conteúdo principal da nossa página -->
-    <main>
-      <!-- Contém um artigo -->
-      <article>
-        <h2>Oque oferecemos</h2>
+            <h3>Ajuda</h3>
+            <p>Informações sobre como podemos ajudar.</p>
 
-        <p>
+            <p>Mais detalhes sobre nossa ajuda.</p>
+          </div>
 
-        </p>
+        </section>
 
-        <h3>Saiba mais a nossa historia</h3>
+    </article>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Informações sobre a nossa missão e visão.</p>
+    </section>
 
-        <p>
+    <section id="instituicoes">
+      <h2>Instituições Parceiras</h2>
+      <p>Lista de instituições que colaboram conosco.</p>
+    </section>
 
-        </p>
+    <section id="suporte">
+      <h2>Suporte</h2>
+      <p>Informações de contato para suporte.</p>
+    </section>
+  </main>
 
-        <p>
+</body>
 
-        </p>
-
-        <h3>ajuda </h3>
-
-        <p>
-
-        </p>
-
-        <p>
-
-        </p>
-      </article>
-
-      <!-- O contéudo do elemento aside pode ser aninhado dentro do conteúdo do elemento main -->
-      <aside>
-        <h2></h2>
-
-        <ul>
-          <li><a href="#"></a>nosso objetivo</li>
-          <li><a href="#"></a></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </aside>
-    </main>
-
-    <!-- Esse é o rodapé principal que vai ser usado em todas as páginas do nosso website -->
-
-    <footer>
-      <p></p>
-    </footer>
-  </body>
-</html>
-
-
-
+</HTml>
 {% endblock %}
