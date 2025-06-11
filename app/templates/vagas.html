@@ -5,4 +5,113 @@
 {% block content %}
 <h1>{{ request.endpoint }}</h1>
 <!-- Conteúdo da página aqui -->
+ <style>
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .vaga {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .vaga h2 {
+      margin-top: 0;
+    }
+
+    .detalhes {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .btn-candidatar {
+      background-color: #004080;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-candidatar:hover {
+      background-color: #003060;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eaeaea;
+      margin-top: 40px;
+    }
+
+    .dificuldade{
+        position: absolute;
+        margin-top: 0px;
+        right: 40px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+    }
+
+    .facil{
+        background-color: greenyellow;
+    }
+
+    .medio{
+        background-color: yellow;
+    }
+
+    .dificil{
+        background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="vaga">
+        <span class="dificuldade facil">Fácil</span>
+        <h2>Professor</h2>
+        <p class="detalhes">Local: | Tipo: CLT</p>
+        <p>Descrição da vaga.</p>
+        <a href="#" class="btn-candidatar">Candidatar-se</a>
+      </div>
+
+    <div class="vaga">
+        <span class="dificuldade dificil">Difícil</span>
+        <h2>Analista de Sistemas</h2>
+        <p class="detalhes">Local: | Tipo: PJ</p>
+        <p>Descrição da vaga.</p>
+        <a href="#" class="btn-candidatar">Candidatar-se</a>
+      </div>
+
+    <div class="vaga">
+      <span class="dificuldade medio">Médio</span>
+      <h2>Motorista Entregador</h2>
+      <p class="detalhes">Local: | Tipo: CLT</p>
+      <p>Descrição da vaga.</p>
+      <a href="#" class="btn-candidatar">Candidatar-se</a>
+    </div>
+  </main>
 {% endblock %}

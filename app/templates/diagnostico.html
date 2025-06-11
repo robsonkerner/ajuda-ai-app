@@ -4,5 +4,90 @@
 
 {% block content %}
 <h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico Simples</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .formulario {
+      background-color: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="formulario">
+    <h2>Diagnóstico</h2>
+    <form>
+      <label>Nome da Empresa</label>
+      <input type="text">
+
+      <label>Nome do Responsável</label>
+      <input type="text">
+
+      <label>Contato</label> <!-- Sem validação de email -->
+      <input type="text">
+
+      <label>Área de Atuação</label>
+      <input type="text">
+
+      <label>Descrição do Problema</label>
+      <textarea rows="4"></textarea>
+
+      <button>Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
 {% endblock %}

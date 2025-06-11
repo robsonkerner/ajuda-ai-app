@@ -1,8 +1,104 @@
-{% extends 'base.html' %} 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Notificações</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
 
-{% block title %}CONECTA-HUB{% endblock %} 
+    .notification {
+      background: #fff;
+      border-left: 5px solid #4CAF50;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-{% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
-{% endblock %}
+    .notification.warning {
+      border-left-color: #FFC107;
+    }
+
+    .notification.urgent {
+      border-left-color: #F44336;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .type {
+      font-weight: bold;
+    }
+
+    .sender {
+      color: #555;
+    }
+
+    .subject {
+      margin-bottom: 8px;
+    }
+
+    .info {
+      font-size: 0.85em;
+      color: #999;
+    }
+
+    .actions {
+      margin-top: 10px;
+    }
+
+    .actions button {
+      padding: 6px 12px;
+      margin-right: 10px;
+      border: none;
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .actions button.archive {
+      background-color: #9E9E9E;
+    }
+
+    .actions button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notification urgent">
+    <div class="header">
+      <span class="type">Urgente</span>
+      <span class="sender">Administração</span>
+    </div>
+    <div class="subject">Problema de segurança detectado</div>
+    <div class="info">Enviado em: 09/06/2025 | Visualizado: Não</div>
+    <div class="actions">
+      <button>Responder</button>
+      <button class="archive">Arquivar</button>
+    </div>
+  </div>
+
+  <div class="notification warning">
+    <div class="header">
+      <span class="type">Aviso</span>
+      <span class="sender">Recursos Humanos</span>
+    </div>
+    <div class="subject">Atualização de política interna</div>
+    <div class="info">Enviado em: 08/06/2025 | Visualizado: Sim</div>
+    <div class="actions">
+      <button>Responder</button>
+      <button class="archive">Arquivar</button>
+    </div>
+  </div>
+
+</body>
+</html>
