@@ -3,6 +3,105 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
+ <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .welcome {
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      color: #003366;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 220px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #003366;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .actions button {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #0055aa;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .actions button:hover {
+      background-color: #003366;
+    }
+  </style>
+<body>
+  
+  <div class="container">
+    <section class="welcome">
+      <h2>Olá, Empresa!</h2>
+      <p>Acompanhe suas vagas, diagnósticos e conexões com universidades aqui.</p>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+        <h3>📊 3 Diagnósticos</h3>
+        <p>Últimos realizados: SWOT, Inovação e Digital</p>
+      </div>
+      <div class="card">
+        <h3>📢 2 Vagas Abertas</h3>
+        <p>Estágio em TI e Analista Júnior</p>
+      </div>
+      <div class="card">
+        <h3>🤝 5 Conexões Acadêmicas</h3>
+        <p>UFMG, IFMG, entre outras</p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button>Realizar Novo Diagnóstico</button>
+      <button>Publicar Nova Vaga</button>
+      <button>Buscar Soluções Acadêmicas</button>
+      <button>Contratar Consultoria</button>
+    </section>
+  </div>
+
+</body>
+=======
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
