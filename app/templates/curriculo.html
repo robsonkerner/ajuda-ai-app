@@ -3,6 +3,108 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Simplificado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 550px; /* Largura menor para simplicidade */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: calc(100% - 20px); /* Ajuste para o padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-group { /* Simplificado de form-section */
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee; /* Linha divisória simples */
+        }
+        .form-group:last-child {
+            border-bottom: none;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>Meu Currículo</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="resumo">Resumo Profissional:</label>
+                <textarea id="resumo" name="resumo" placeholder="Um breve resumo sobre sua trajetória e objetivos."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experiencia">Experiência e Formação:</label>
+                <textarea id="experiencia" name="experiencia" placeholder="Ex: Desenvolvedor Web, Empresa ABC (2020-2023); Graduação em TI, Faculdade XYZ."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="habilidades">Habilidades:</label>
+                <textarea id="habilidades" name="habilidades" placeholder="Ex: JavaScript, Python, Comunicação, Liderança."></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
 {% endblock %}

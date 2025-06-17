@@ -3,6 +3,99 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1; }
+
+input[type=texto], input[type=senha] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  width: 150px;
+}
+
+button {
+  background-color: #04a7aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.senha {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.senha {
+     display: block;
+     float: none;
+  }
+
+  }
+</style>
+
+<h2>Ajuda Ai</h2>
+
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="https://portal1.iff.edu.br/nossos-campi/reitoria/pro-reitorias/pro-reitoria-de-gestao-de-pessoas/desenvolvimento-institucional/imagens/avatar.jpg/@@images/image.jpeg" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="texto" placeholder="Email" name="email" required>
+
+    <label for="senha"><b>Senha</b></label>
+    <input type="senha" placeholder="Senha" name="senha" required>
+
+    <button type="submit">Entrar</button>
+    <label>
+      <input type="checkbox" checked="checked" name="lembre-me"> Lembre-me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="senha">Esqueceu a <a href="#">senha?</a></span>
+  </div>
+
+
+
+</form>
+</div>
+
+
+
 {% endblock %}

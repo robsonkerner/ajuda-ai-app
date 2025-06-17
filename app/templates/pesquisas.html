@@ -4,5 +4,55 @@
 
 {% block content %}
 <h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+
+    <head>
+        <style></style>
+
+        <meta charset="UTF-8">
+        <title>Pesquisas</title>
+        <style>
+            body{  background: color #2f4f4f;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+
+
+            }
+
+
+        </style>
+    </head>
+    <style>
+        body{
+             float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+}
+
+    </style>
+    <body>
+        <p>Esta parte contêm a parte de barra de pesquisa</p>
+
+    <input type = "text" id = "txtxBusca" placeholder="Buscar..."/>
+    <img src="search3.png" id ="btnbusca" alt="Buscar"/>
+    <p>Resultado da pesquisa(telas que aparecerão depois da pesquisa)</p>
+    <div>
+    <style>
+        .quadrado{
+            background-color:red;
+            width:200px;
+            height:200px;
+
+        }
+    </style>
+
+
+
+    </body>
+</html>
 {% endblock %}

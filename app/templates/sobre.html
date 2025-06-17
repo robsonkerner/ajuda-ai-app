@@ -3,6 +3,223 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre - Ajuda Ai</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav .active {
+      color: #ccc;
+    }
+
+    .hero {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 800px;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #eaeaea;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .card {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ajuda Ai</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#" class="active">Sobre</a></li>
+          <li><a href="#">Funcionalidades</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Conectando Universidades e Empresas</h2>
+      <p>Impulsionamos a inovação, a pesquisa aplicada e novas oportunidades para todos.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h3>🚀 Quem Somos</h3>
+      <p>
+        O <strong>Ajuda Ai</strong> é uma plataforma inovadora que aproxima o setor acadêmico do setor empresarial,
+        promovendo colaboração estratégica, desenvolvimento tecnológico e crescimento conjunto.
+      </p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h3>✨ Destaques da Plataforma</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Diagnósticos Empresariais</h4>
+          <p>Avaliações como SWOT e maturidade digital para entender o cenário da sua empresa.</p>
+        </div>
+        <div class="card">
+          <h4>Match Inteligente</h4>
+          <p>Conectamos empresas às universidades e pesquisadores ideais para cada desafio.</p>
+        </div>
+        <div class="card">
+          <h4>Rodadas de Negócios</h4>
+          <p>Eventos que promovem networking, parcerias e soluções aplicadas.</p>
+        </div>
+        <div class="card">
+          <h4>Oportunidades para Estudantes</h4>
+          <p>Estágios, empregos e projetos que aproximam alunos do mercado real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <h3>🎯 Nossa Missão</h3>
+      <p>
+        Criar um ecossistema colaborativo entre universidades e empresas, fortalecendo a inovação no Brasil
+        e contribuindo para uma sociedade mais conectada, tecnológica e inclusiva.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ajuda Ai. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
 {% endblock %}

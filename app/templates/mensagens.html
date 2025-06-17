@@ -3,6 +3,55 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<body>
+    <main>
+      <style>div {
+        width: 200px;
+        height: 50px;
+        background-color: #f0f0f0;
+        border: 1px solid black;
+        padding: 12px;
+        margin: 10px;
+        position: absolute
+
+      }</style>
+      <form class="form-join">
+        <input
+          type="text"
+          id="name"
+          maxlength="8"
+          placeholder="Seu nome"
+          size="5"
+          required
+        />
+        <input
+          type="text"
+          id="room"
+          placeholder="Escolha um chat"
+          size="5"
+          required
+        />
+        <div>
+          <p>oiii.
+          </p>
+        </div>
+
+
+        <button id="join" type="submit">Join</button>
+      </form>
+
+      <ul class="chat-display"></ul>
+
+      <p class="user-list"></p>
+
+      <p class="room-list"></p>
+
+      <p class="activity"></p>
+
+      <form class="form-msg">
+        <input type="text" id="message" placeholder="Sua mensagem" required />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
 {% endblock %}

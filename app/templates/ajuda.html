@@ -3,6 +3,173 @@
 {% block title %}CONECTA-HUB{% endblock %} 
 
 {% block content %}
-<h1>{{ request.endpoint }}</h1>
-<!-- Conteúdo da página aqui -->
+<!DOCTYPE html>Add commentMore actions
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ajuda - Ajuda Ai</title>
+    <style>
+        /* Resetando margens e paddings padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo o estilo global */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilos do Header */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para a Seção de Ajuda */
+        .help-content {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .help-content h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .help-content p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .help-box {
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 auto 30px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .help-box h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .help-box ul {
+            list-style-type: none;
+        }
+
+        .help-box ul li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ajuda Ai - Plataforma Universidade-Empresa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Funcionalidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="help-content">
+        <div class="container">
+            <h2>Como Funciona?</h2>
+            <p>A plataforma <strong>Ajuda Ai</strong> conecta universidades e empresas para impulsionar inovação e transferência de conhecimento. Confira as principais funcionalidades:</p>
+
+            <div class="help-box">
+                <h3>Para Empresas</h3>
+                <ul>
+                    <li><strong>Cadastro Simplificado</strong>: Registre sua empresa rapidamente.</li>
+                    <li><strong>Diagnósticos de Avaliação</strong>: Analise pontos fortes e oportunidades de melhoria.</li>
+                    <li><strong>Acesso a Talentos</strong>: Publique vagas e encontre estudantes qualificados.</li>
+                    <li><strong>Consultorias e Cursos</strong>: Acesse serviços especializados de universidades.</li>
+                </ul>
+            </div>
+
+            <div class="help-box">
+                <h3>Para Universidades</h3>
+                <ul>
+                    <li><strong>Cadastro Institucional</strong>: Apresente sua instituição e projetos de P&D.</li>
+                    <li><strong>Oferta de Serviços de P&D</strong>: Divulgue suas soluções tecnológicas.</li>
+                    <li><strong>Consultorias e Capacitação</strong>: Ofereça programas de capacitação para empresas.</li>
+                </ul>
+            </div>
+
+            <div class="help-box">
+                <h3>Como Navegar na Plataforma?</h3>
+                <p>
+                    1. Faça seu <strong>cadastro</strong> como empresa ou universidade. <br>
+                    2. Realize um <strong>diagnóstico</strong> para identificar suas necessidades. <br>
+                    3. Acesse os <strong>serviços</strong> oferecidos por universidades ou empresas. <br>
+                    4. Participe de <strong>rodadas de negócios</strong> para criar parcerias.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ajuda Ai - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
 {% endblock %}
